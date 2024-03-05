@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -23,3 +24,21 @@ Route::get('/users', function () {
     $name=implode(', ', $userNames);
     return "The users are: " .$name.",";
 });
+
+Route::get('/giao-dien',function(){
+    return view('task');
+});
+
+Route::get('/index',function(){
+    return view('form');
+});
+Route::get('/post',function(){
+    return view('query');
+});
+// Route::post('/post',[HomeController::class,'post']);
+
+Route::post('/post',[HomeController::class,'store']);
+Route::get('/post-input',function(){
+    return view('oldInput');
+});
+Route::post('/post-input',[HomeController::class,'postInput']);
