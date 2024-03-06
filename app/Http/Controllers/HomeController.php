@@ -16,10 +16,8 @@ class HomeController extends Controller
         //  $password=$request->input('password');
        
      $password=$request->input('password.2.password','123456');
-     dd($password);
-
-
      dd($request);
+
      //  return $password;
     //  dd($password);
     //  $input=$request->input();
