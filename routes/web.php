@@ -83,3 +83,20 @@ Route::get('/demo', function () {
     ];
     return view('home',compact('posts'));
 })->name('home');
+
+Route::get('/home', function () {
+    // $tasks = [
+    //     ['name' => 'Task 1'],
+    //     ['name' => 'Task 2'],
+    //     ['name' => 'Task 3'],
+    // ];
+    return view('home');
+});
+
+
+Route::get('/ecommerce',function(){
+    return view('layouts.contentecommerce');
+});
+// Route::get('/ecommerce',function(){
+//     return view('layouts.ecommerce');
+// });

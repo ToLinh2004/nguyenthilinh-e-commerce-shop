@@ -1,0 +1,16 @@
+.grid-navbar{
+    background-color: rgb(213, 224, 233);
+    padding-top: 10px;
+}
+.asside{
+    background-color:white;
+    width:7%;
+}
+.aside{
+    padding-bottom: 20px;
+    text-align: center  ;
+}
+.dropdown{
+    border: 1px solid grey;
+ background-color: white;
+}
